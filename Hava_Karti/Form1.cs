@@ -20,7 +20,7 @@ namespace Hava_Karti
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label1.Text = "İstanbul - Türkiye";
             string api = "14ad2aba611dbef9c504b82a127794c5";
             string connection = "http://api.openweathermap.org/data/2.5/weather?q=istanbul&mode=xml&lang=tr&units=metric&appid=" + api;
             XDocument hava = XDocument.Load(connection);
